@@ -49,4 +49,4 @@ find_contrib_vol <- function(df, HUC_code){
 df_out <- purrr::map_dfr(all_hucs, ~find_contrib_vol(df, .x))
 
 
-write.csv(df_out,'data/HUC_12_contrib_Volumes.csv')
+write.csv(df_out,'data/output/HUC_12_contrib_Volumes_21.07.2021.csv')
